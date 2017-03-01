@@ -10,7 +10,7 @@ const app = new Koa()
 
 const route = (() => {
   const router = koaRouter()
-  let temp = 'nothing'
+  let temp = ''
 
   router.prefix('/')
 
@@ -36,13 +36,13 @@ const route = (() => {
         }
       }
     } catch (er) {
-      console.log(er)
+      // console.log(er)
     }
   })
 
-  router.get('/', async (ctx) => {
-    ctx.body = 'hola mundo'
-  })
+  // router.get('/', async (ctx, next) => {
+  //   ctx.body = 'hola mundo'
+  // })
 
   return router
 })()
