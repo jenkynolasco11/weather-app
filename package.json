@@ -4,7 +4,7 @@
   "description": "Weather app backend for mobile app",
   "main": "app.js",
   "scripts": {
-    "start:server": "nodemon --exec babel-cli app.js -e .js"
+    "start:server": "nodemon --exec babel-node app.js -e .js"
   },
   "repository": {
     "type": "git",
@@ -27,11 +27,11 @@
     "babel-core": "^6.23.1",
     "babel-plugin-syntax-async-functions": "^6.13.0",
     "babel-plugin-transform-regenerator": "^6.22.0",
-    "fetch": "^1.1.0",
     "koa": "^2.0.0-alpha.8",
-    "koa-bodyparser": "^4.1.0",
+    "koa-bodyparser": "^3.2.0",
     "koa-logger": "^2.0.1",
-    "koa-router": "^5.4.0"
+    "koa-router": "^7.0.1",
+    "node-fetch": "^1.6.3"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
