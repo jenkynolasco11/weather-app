@@ -161,7 +161,7 @@
         "require-jsdoc" : [1],
         "semi-spacing" : [1, { "before" : false, "after" : true}],
         "semi" : [2, "never"],
-        "space-before-blocks" : [2, "never"],
+        "space-before-blocks" : [2, { "functions": "always", "keywords": "always", "classes": "never" }],
         "space-before-function-paren" : [2, "never"],
         # "space-in-parens" : [2, "as-needed"],
         "space-infix-ops" : [2],
