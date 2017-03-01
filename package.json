@@ -1,0 +1,29 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Weather app backend for mobile app",
+  "main": "app.js",
+  "scripts": {
+    "start:server": "nodemon --exec babel-cli app.js -e .js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jenkynolasco11/weather-app.git"
+  },
+  "keywords": [
+    "weather",
+    "react",
+    "react-native",
+    "mobile"
+  ],
+  "author": "Jenky Nolasco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jenkynolasco11/weather-app/issues"
+  },
+  "homepage": "https://github.com/jenkynolasco11/weather-app#readme",
+  "dependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-core": "^6.23.1"
+  }
+}
