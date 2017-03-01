@@ -53,7 +53,9 @@ app
   .use(route.routes())
   .use(route.allowedMethods())
 
-app.listen(config.PORT, () => {
-  if(config.ENV === 'development')
-    console.log(`started server at ${ config.PORT }`)
+const port = (process.env.PORT || config.PORT)
+
+app.listen(port, () => {
+  // if(config.ENV === 'development')
+  console.log(`started server at ${ port }`)
 })
