@@ -25,11 +25,16 @@ const route = (() => {
 
         return
       }
-
+      console.log(temp)
       ctx.body = {
         temp : {
           coords : temp.coord,
           weather : temp.weather,
+          temp : {
+            curr : temp.main.temp,
+            min : temp.main.temp_min,
+            max : temp.main.temp_max
+          },
           id : temp.id,
           name : temp.name,
           code : temp.cod
